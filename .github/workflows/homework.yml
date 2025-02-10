@@ -28,7 +28,7 @@ jobs:
         run: |
           pytest -v --tb=no -q
         continue-on-error: true
-      - name: Natijalar
-        run: |
-          CHANGED_FILES=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}) 
-          python test/sendtest.py ${{github.actor}} '${{github.repository}}' "$CHANGED_FILES"
+      # - name: Natijalar
+      #   run: |
+      #     CHANGED_FILES=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}) 
+      #     python test/sendtest.py ${{github.actor}} '${{github.repository}}' "$CHANGED_FILES"
