@@ -100,3 +100,9 @@ This README provides:
 5. File format expectations
 6. Environment requirements
 7. Both programmatic and CLI usage examples
+
+## Test 
+
+```bash
+pytest -v --tb=no -q
+```
